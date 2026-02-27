@@ -15,11 +15,18 @@ Self-hosted collection of powerful web-based tools for everyday tasks. All files
 
 ## Docker Image
 
-- **Image**: `iib0011/omni-tools:latest`
-- **Source**: Docker Hub
-- **Size**: ~30.5 MB
+- **Image**: `arnaduga/omnitools:latest`
+- **Source**: Docker Hub (auto-built via GitHub Actions)
 - **Port**: 80 (HTTP)
 - **License**: MIT
+
+## GitOps Setup
+
+This repository is managed by ArgoCD for automatic deployment. See [GITOPS.md](GITOPS.md) for details.
+
+- **Application Repo**: https://github.com/arnaduga/omni-tools
+- **Manifests Repo**: https://github.com/arnaduga/omnitools-argo (this repo)
+- **Deployment**: Automatic via ArgoCD when manifests change
 
 ## Deployment Instructions
 
