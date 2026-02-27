@@ -37,7 +37,7 @@ spec:
       containers:
       - name: omnitools
         image: iib0011/omnitools:latest
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
           name: http
